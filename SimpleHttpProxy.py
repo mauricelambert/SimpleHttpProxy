@@ -23,7 +23,7 @@
 This package implements a simple HTTP(S) proxy.
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"
@@ -42,6 +42,8 @@ __license__ = license
 __copyright__ = copyright
 
 __all__ = ["AbcHttpProxy"]
+
+print(copyright)
 
 from ssl import create_default_context, _create_unverified_context #, SSLContext, PROTOCOL_TLS_SERVER
 from socketserver import BaseRequestHandler, ThreadingMixIn, TCPServer

@@ -37,14 +37,15 @@ ProxyPrinter -i 0.0.0.0 -p 8012 -s
 from SimpleHttpProxy import AbcHttpProxy
 
 class ProxyRestrict(AbcHttpProxy):
-	@staticmethod
-	def handle_request(data: bytes) -> bytes:
+	def handle_request(self, data: bytes) -> bytes:
 		if b'://www.ruby-lang.org' in data.split(b"\r\n", 1)[0]:
 			return data.replace(b'www.ruby-lang.org', b'www.python.org', 2)
 		return data
-	@staticmethod
-	def handle_response(data: bytes) -> bytes:
-		return data.replace(b'www.ruby-lang.org', b'python.org')
+	def handle_response(self, data: bytes) -> bytes:
+		return data.replace(b'www.ruby-lang.org', b'www.python.org')
+
+proxy = ProxyRestrict()
+proxy.start()
 ```
 
 #### Screenshot
