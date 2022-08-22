@@ -33,6 +33,8 @@ ProxyPrinter -i 0.0.0.0 -p 8012 -s
 
 ### Custom proxy using Python
 
+Proxy Server:
+
 ```python
 from SimpleHttpProxy import AbcHttpProxy
 
@@ -48,6 +50,15 @@ proxy = ProxyRestrict()
 proxy.start()
 ```
 
+Python Client:
+
+```python
+from urllib.request import Request, urlopen
+r = Request("http://ruby-lang.org/")
+r.set_proxy('127.0.0.1:8012', 'http')
+print(urlopen(r).read()[3150:4000].decode())
+```
+
 #### Screenshot
 
 ![Firefox proxy configuration](https://raw.githubusercontent.com/mauricelambert/SimpleHttpProxy/main/FirefoxConfig.PNG "Firefox proxy configuration")
@@ -61,7 +72,7 @@ proxy.start()
  - [Github Page](https://github.com/mauricelambert/SimpleHttpProxy/)
  - [Pypi package](https://pypi.org/project/SimpleHttpProxy/)
  - [Documentation](https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.pyz)
+ - [Python Executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz)
 
 ## Licence
 

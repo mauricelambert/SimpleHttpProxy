@@ -16,7 +16,7 @@ setup(
     url=package.__url__,
     project_urls={
         "Documentation": "https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html",
-        "Executable": "https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.pyz",
+        "Executable": "https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz",
     },
     classifiers=[
     	"Framework :: AsyncIO",

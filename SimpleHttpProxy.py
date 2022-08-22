@@ -33,7 +33,7 @@ license = "GPL-3.0 License"
 __url__ = "https://github.com/mauricelambert/SimpleHttpProxy"
 
 copyright = """
-SimpleHttpProxy  Copyright (C) 2021  Maurice Lambert
+SimpleHttpProxy  Copyright (C) 2022  Maurice Lambert
 This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it
 under certain conditions.
