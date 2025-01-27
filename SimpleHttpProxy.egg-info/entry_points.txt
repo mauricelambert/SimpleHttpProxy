@@ -1,3 +1,2 @@
 [console_scripts]
 ProxyPrinter = SimpleHttpProxy:main
-

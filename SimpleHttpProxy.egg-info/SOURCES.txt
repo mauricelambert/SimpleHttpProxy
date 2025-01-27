@@ -1,10 +1,9 @@
-FirefoxConfig.PNG
+LICENSE.txt
 MANIFEST.in
-ProxyPrinter.png
-ProxyRestriction.png
 README.md
 SimpleHttpProxy.py
-build_zipapp.sh
+pyproject.toml
+setup.cfg
 setup.py
 SimpleHttpProxy.egg-info/PKG-INFO
 SimpleHttpProxy.egg-info/SOURCES.txt

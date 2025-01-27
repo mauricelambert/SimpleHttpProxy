@@ -1,0 +1,59 @@
+# [build-system]
+# requires = ["setuptools"]
+# build-backend = "setuptools.build_meta"
+
+[project]
+name = "SimpleHttpProxy"
+version = "0.0.3"
+dependencies = []
+authors = [
+    {name = "Maurice Lambert", email = "mauricelambert434@gmail.com"},
+]
+maintainers = [
+    {name = "Maurice Lambert", email = "mauricelambert434@gmail.com"},
+]
+description = 'This package implements a simple HTTP(S) proxy.'
+readme = {file = "README.md", content-type = "text/markdown"}
+# url = "https://github.com/mauricelambert/SimpleHttpProxy"
+# download-url = "https://mauricelambert.github.io/info/python/security/SimpleHttpProxy.pyz"
+classifiers = [
+    "Framework :: AsyncIO",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Natural Language :: English",
+    "Topic :: System :: Networking",
+    "Topic :: Internet :: WWW/HTTP",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    'Operating System :: MacOS :: MacOS X',
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Libraries",
+    "Intended Audience :: System Administrators",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+keywords = ["Proxy", "Web", "Browser", "HTTP", "HTTPS", "Asynchronous", "ProxyHttp"]
+license = {text = "GPL-3.0 License"}
+requires-python = ">=3.8"
+
+[project.scripts]
+ProxyPrinter = "SimpleHttpProxy:main"
+
+[project.urls]
+"Github" = "https://github.com/mauricelambert/SimpleHttpProxy"
+"Documentation" = "https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html"
+"Python Executable" = "https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz"
+"Windows Executable" = "https://mauricelambert.github.io/info/python/code/ProxyPrinter.exe"
+
+[tool.setuptools]
+include-package-data = true
+platforms = ['Windows', 'Linux', 'MacOS']
+py-modules = ['SimpleHttpProxy']
+packages = []
+script-files = []
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}

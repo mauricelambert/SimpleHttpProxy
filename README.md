@@ -15,8 +15,36 @@ This package require:
 
 ## Installation
 
+### Pip
+
 ```bash
-pip install SimpleHttpProxy
+python3 -m pip install SimpleHttpProxy
+```
+
+### Git
+
+```bash
+git clone "https://github.com/mauricelambert/SimpleHttpProxy.git"
+cd "SimpleHttpProxy"
+python3 -m pip install .
+```
+
+### Wget
+
+```bash
+wget https://github.com/mauricelambert/SimpleHttpProxy/archive/refs/heads/main.zip
+unzip main.zip
+cd SimpleHttpProxy-main
+python3 -m pip install .
+```
+
+### cURL
+
+```bash
+curl -O https://github.com/mauricelambert/SimpleHttpProxy/archive/refs/heads/main.zip
+unzip main.zip
+cd SimpleHttpProxy-main
+python3 -m pip install .
 ```
 
 ## Usages
@@ -59,7 +87,7 @@ r.set_proxy('127.0.0.1:8012', 'http')
 print(urlopen(r).read()[3150:4000].decode())
 ```
 
-#### Screenshot
+#### Screenshots
 
 ![Firefox proxy configuration](https://raw.githubusercontent.com/mauricelambert/SimpleHttpProxy/main/FirefoxConfig.PNG "Firefox proxy configuration")
 
@@ -69,10 +97,11 @@ print(urlopen(r).read()[3150:4000].decode())
 
 ## Links
 
- - [Github Page](https://github.com/mauricelambert/SimpleHttpProxy/)
- - [Pypi package](https://pypi.org/project/SimpleHttpProxy/)
+ - [Pypi](https://pypi.org/project/SimpleHttpProxy/)
+ - [Github](https://github.com/mauricelambert/SimpleHttpProxy/)
  - [Documentation](https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz)
+ - [Executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz)
+ - [Python Windows executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.exe)
 
 ## Licence
 

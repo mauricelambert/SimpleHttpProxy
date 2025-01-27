@@ -1,32 +1,42 @@
 Metadata-Version: 2.1
 Name: SimpleHttpProxy
-Version: 0.0.2
+Version: 0.0.3
 Summary: This package implements a simple HTTP(S) proxy.
 Home-page: https://github.com/mauricelambert/SimpleHttpProxy
+Download-URL: https://mauricelambert.github.io/info/python/security/ProxyPrinter.pyz
 Author: Maurice Lambert
-Author-email: mauricelambert434@gmail.com
+Author-email: Maurice Lambert <mauricelambert434@gmail.com>
 Maintainer: Maurice Lambert
-Maintainer-email: mauricelambert434@gmail.com
+Maintainer-email: Maurice Lambert <mauricelambert434@gmail.com>
 License: GPL-3.0 License
+Project-URL: Github, https://github.com/mauricelambert/SimpleHttpProxy
 Project-URL: Documentation, https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html
-Project-URL: Executable, https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz
-Keywords: Proxy,Web,Browser,HTTP,HTTPS,Asynchronous
+Project-URL: Python Executable, https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz
+Project-URL: Windows Executable, https://mauricelambert.github.io/info/python/code/ProxyPrinter.exe
+Keywords: Proxy,Web,Browser,HTTP,HTTPS,Asynchronous,ProxyHttp
 Platform: Windows
 Platform: Linux
 Platform: MacOS
 Classifier: Framework :: AsyncIO
 Classifier: Environment :: Console
-Classifier: Natural Language :: English
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3.9
 Classifier: Operating System :: MacOS
+Classifier: Natural Language :: English
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
 Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.9
 Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: System Administrators
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
 Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
+License-File: LICENSE.txt
 
 ![SimpleHttpProxy logo](https://mauricelambert.github.io/info/python/code/SimpleHttpProxy_small.png "SimpleHttpProxy logo")
 
@@ -45,8 +55,36 @@ This package require:
 
 ## Installation
 
+### Pip
+
 ```bash
-pip install SimpleHttpProxy
+python3 -m pip install SimpleHttpProxy
+```
+
+### Git
+
+```bash
+git clone "https://github.com/mauricelambert/SimpleHttpProxy.git"
+cd "SimpleHttpProxy"
+python3 -m pip install .
+```
+
+### Wget
+
+```bash
+wget https://github.com/mauricelambert/SimpleHttpProxy/archive/refs/heads/main.zip
+unzip main.zip
+cd SimpleHttpProxy-main
+python3 -m pip install .
+```
+
+### cURL
+
+```bash
+curl -O https://github.com/mauricelambert/SimpleHttpProxy/archive/refs/heads/main.zip
+unzip main.zip
+cd SimpleHttpProxy-main
+python3 -m pip install .
 ```
 
 ## Usages
@@ -89,7 +127,7 @@ r.set_proxy('127.0.0.1:8012', 'http')
 print(urlopen(r).read()[3150:4000].decode())
 ```
 
-#### Screenshot
+#### Screenshots
 
 ![Firefox proxy configuration](https://raw.githubusercontent.com/mauricelambert/SimpleHttpProxy/main/FirefoxConfig.PNG "Firefox proxy configuration")
 
@@ -99,14 +137,13 @@ print(urlopen(r).read()[3150:4000].decode())
 
 ## Links
 
- - [Github Page](https://github.com/mauricelambert/SimpleHttpProxy/)
- - [Pypi package](https://pypi.org/project/SimpleHttpProxy/)
+ - [Pypi](https://pypi.org/project/SimpleHttpProxy/)
+ - [Github](https://github.com/mauricelambert/SimpleHttpProxy/)
  - [Documentation](https://mauricelambert.github.io/info/python/code/SimpleHttpProxy.html)
- - [Python Executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz)
+ - [Executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.pyz)
+ - [Python Windows executable](https://mauricelambert.github.io/info/python/code/ProxyPrinter.exe)
 
 ## Licence
 
 Licensed under the [GPL, version 3](https://www.gnu.org/licenses/).
-
-
 
